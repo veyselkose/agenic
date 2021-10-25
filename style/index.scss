@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "PingFangSC", sans-serif;
+}
+$primary-color:#f04e27;
+@import "pages/navigation";
+
+@import "pages/home";
+
+@import "pages/about";
+
+@import "pages/portfolio";
+
+@import "pages/blog";
+
+@import "pages/contact";
+
+@import "pages/footer";
+
+@import "pages/portfolio-single";
+
+@import "pages/blog-single";
+
+.header-title {
+  background: url(../img/header-title.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  .container-fluid {
+    background-color: #22283581;
+  }
+}
+
+.of-h {
+  overflow: hidden;
+}
+
+.yukari{
+  position: fixed;
+  bottom:15px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  background-color: $primary-color;
+  z-index: 2000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition:all 300ms ;
+  opacity: 0;
+  .iconify{
+    color: lighten($color: $primary-color, $amount: 40);
+    transition: color 300ms;
+  }
+@media screen and (min-width:768px) {
+  &:hover{
+    background-color: lighten($color: $primary-color, $amount: 25);
+    .iconify{
+      color: lighten($color: $primary-color, $amount: 0);
+    }
+  }
+}
+  &:active{
+    background-color: lighten($color: $primary-color, $amount: 35);
+    .iconify{
+      color: lighten($color: $primary-color, $amount: 0);
+    }
+  }
+}

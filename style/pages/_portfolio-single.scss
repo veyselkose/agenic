@@ -1,0 +1,51 @@
+.portfolio-detail-page-detail {
+
+    .container {
+      .row {
+        hr {
+          border-top: 1px solid #eff1f4;
+        }
+        p {
+          line-height: 2;
+        }
+        nav {
+          .breadcrumb {
+            background-color: transparent;
+            .breadcrumb-item {
+              a {
+                color: #484848;
+              }
+              &:first-child {
+                &::before {
+                  content: "" !important;
+                }
+              }
+              &::before {
+                content: url("https://api.iconify.design/eva:arrow-ios-forward-outline.svg?color=%23999999&height=12") !important;
+                vertical-align: -0.125em;
+              }
+            }
+          }
+        }
+        .custom-sticky-top{
+          @media screen and (min-width:992px) {
+            position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          z-index: 1020;
+          }
+        }
+      }
+      .texts-group {
+        .custom-label {
+          color: #999999;
+          font-weight: bold;
+        }
+        .custom-badge {
+          color: $primary-color;
+          border: 1px solid $primary-color;
+        }
+      }
+    }
+  }
+  

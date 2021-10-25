@@ -1,0 +1,58 @@
+.about-page-frequently-asked-questions {
+    .container {
+      .title {
+        font-weight: bold;
+        position: relative;
+        width: 400px;
+        @media screen and (max-width: 768px) {
+          width: 280px;
+          &::after {
+            left: 108px !important;
+          }
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          bottom: -14px;
+          left: 165px;
+          height: 2px;
+          width: 75px;
+          background-color: $primary-color;
+        }
+      }
+      .accordion {
+        .card {
+          border: 1px solid #e6e8eb;
+          .card-header {
+            background-color: #fff;
+            border: none;
+            h2 {
+              .iconify {
+                color: #222835;
+              }
+              button {
+                box-shadow: none;
+                color: #222835;
+                text-decoration: none;
+                .iconify {
+                  transform: rotate(43deg) !important;
+                  transition: 300ms all;
+                }
+              }
+              .collapsed {
+                .iconify {
+                  transform: rotate(180deg) !important;
+                  transition: 300ms all;
+                }
+              }
+            }
+          }
+          .card-body {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }

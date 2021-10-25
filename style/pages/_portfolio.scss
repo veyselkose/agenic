@@ -1,0 +1,10 @@
+.portfolio-img {
+    background: url(../img/header-title-contact.jpg);
+    background-size: cover;
+    background-position: center;
+    .container-fluid {
+      background-color: transparent;
+    }
+  }
+
+@import "../portfolio-section/page-tabs"

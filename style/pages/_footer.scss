@@ -1,0 +1,150 @@
+.dark {
+  background-color: #222835;
+  color: #fff;
+  ul {
+    li {
+      a {
+        color: #dcdcdc !important;
+        &:hover {
+          color: $primary-color !important;
+        }
+      }
+    }
+  }
+  .iconify {
+    background-color: transparent !important ;
+  }
+  .input-group-append {
+    button {
+      color: #222835;
+      border-color: #eff1f4;
+      background-color: #fff;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+.footer-two-form {
+  input[type="text"] {
+    width: 100%;
+    border: 1px solid #eff1f4;
+    background-color: #ffffff;
+    outline: none;
+    height: 40px;
+    padding-left: 10px;
+    &::placeholder {
+      color: #999999;
+    }
+  }
+  input[type="button"] {
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 18px;
+  }
+}
+
+footer {
+  background-color: #f7f9fb;
+  .container {
+    .row {
+      .post {
+        border-bottom: 1px solid #eeeeee;
+        img {
+          object-fit: cover;
+          // height: 70px;
+          width: 67px;
+        }
+        .texts {
+          h6 {
+            color: #484848;
+          }
+          span {
+            color: #c2c2c2;
+            font-size: 15px;
+          }
+        }
+      }
+      .col-lg-2 {
+        .number {
+          color: $primary-color;
+        }
+
+        .iconify {
+          margin-left: 10px;
+          height: 32px !important;
+          width: 32px;
+          padding: 7px;
+          border: 1px solid #fff;
+          border-radius: 2px;
+          background-color: #eff1f46c;
+          transition: 300ms all;
+          &:hover {
+            background-color: #f04f2731;
+            color: $primary-color;
+            border-color: $primary-color;
+          }
+        }
+        .custom-iconify {
+          margin-left: 0 !important;
+          height: 20px !important;
+          width: 20px !important;
+          padding: 0 !important;
+          border: none;
+          border-radius: 0 !important;
+          background-color: transparent;
+          color: $primary-color;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            margin-top: 17px;
+            a {
+              text-decoration: none;
+              color: #484848;
+              &:hover {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+
+      .form-control {
+        border-radius: 2px;
+        border-color: #eff1f4;
+      }
+      .input-group-append {
+        button {
+          color: #222835;
+          border-color: #eff1f4;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+          border-top-right-radius: 2px;
+          border-bottom-right-radius: 2px;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+.comp {
+  background-color: #eff1f4;
+  color: #484848;
+  a {
+    span {
+      color: #484848;
+    }
+  }
+}

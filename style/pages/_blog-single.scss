@@ -1,0 +1,166 @@
+.blog-single-page {
+    padding-top: 6rem;
+    .container {
+      .row {
+        .content {
+          nav {
+            .breadcrumb {
+              background-color: transparent;
+              .breadcrumb-item {
+                a {
+                  color: #484848;
+                }
+                &:first-child {
+                  &::before {
+                    content: "" !important;
+                  }
+                }
+                &::before {
+                  content: url("https://api.iconify.design/eva:arrow-ios-forward-outline.svg?color=%23999999&height=12") !important;
+                  vertical-align: -0.125em;
+                }
+              }
+            }
+          }
+          .post {
+            .custom-badge {
+              display: block;
+              background-color: #eff1f486;
+              border: 1px solid #eff1f4;
+              padding: 5px 15px;
+            }
+            .tag {
+              color: #999999;
+              display: inline-block;
+              margin-top: 1rem;
+              margin-bottom: 1rem;
+            }
+            p {
+              line-height: 2;
+            }
+            blockquote {
+              line-height: 2;
+              position: relative;
+  
+              &::before {
+                position: absolute;
+                content: "";
+                background-color: $primary-color;
+                width: 2px;
+                height: 150px;
+                top: -15px;
+                left: 0;
+              }
+              span {
+                color: #999999;
+              }
+            }
+          }
+        }
+        .side {
+          .form-control {
+            border-radius: 2px;
+            border-color: #eff1f4;
+          }
+          .input-group-append {
+            button {
+              color: #222835;
+              border-color: #eff1f4;
+              border-top-left-radius: 0px;
+              border-bottom-left-radius: 0px;
+              border-top-right-radius: 2px;
+              border-bottom-right-radius: 2px;
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+          .custom-hr-area {
+            .custom-hr {
+              height: 1px;
+              background-color: #eeeeee;
+            }
+          }
+          .popular-post-area {
+            .title {
+              font-weight: bold;
+              position: relative;
+              &::after {
+                position: absolute;
+                content: "";
+                bottom: -14px;
+                height: 2px;
+                width: 75px;
+                left: 0;
+                background-color: $primary-color;
+              }
+            }
+            .post {
+              border-bottom: 1px solid #eeeeee;
+              img {
+                object-fit: cover;
+                // height: 70px;
+                width: 55px;
+              }
+              .texts {
+                h5 {
+                  color: #484848;
+                  font-size: 18px;
+                }
+                span {
+                  color: #c2c2c2;
+                }
+              }
+            }
+          }
+          .category-list-area {
+            .title {
+              font-weight: bold;
+              position: relative;
+              &::after {
+                position: absolute;
+                content: "";
+                bottom: -14px;
+                height: 2px;
+                width: 75px;
+                left: 0;
+                background-color: $primary-color;
+              }
+            }
+            ul {
+              list-style-type: none;
+              li {
+                margin-top: 1rem;
+                a {
+                  color: #484848;
+                }
+                &:first-child {
+                  margin-top: 0;
+                }
+                &::before {
+                  content: "- ";
+                  color: $primary-color;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+          .newsletter-area {
+            .title {
+              font-weight: bold;
+              position: relative;
+              &::after {
+                position: absolute;
+                content: "";
+                bottom: -14px;
+                height: 2px;
+                width: 75px;
+                left: 0;
+                background-color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

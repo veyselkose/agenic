@@ -1,0 +1,70 @@
+.portfolio-page-tabs {
+    .container {
+      .nav {
+        .nav-item {
+          margin-left: 0;
+          .active {
+            border: 2px solid $primary-color !important;
+            color: $primary-color !important;
+          }
+          .nav-link {
+            border: 2px solid transparent;
+            border-radius: 28px;
+            background-color: transparent;
+            color: #222835;
+            font-weight: bold;
+          }
+        }
+      }
+      .tab-content {
+        .post {
+          img {
+            position: relative;
+            object-fit: cover;
+            width: 100%;
+          }
+          &:hover {
+            .more {
+              opacity: 1;
+            }
+          }
+          .more {
+            h5 {
+              .iconify {
+                // margin-right: 10px;
+                cursor: pointer;
+                &:hover {
+                  color: #000;
+                }
+              }
+            }
+            transition: 300ms all;
+            opacity: 0;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            background-color: #f04f27c2;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .load-more-button {
+          padding: 10px 15px;
+          text-decoration: none;
+          background-color: #222835;
+          color: #fff;
+          border: 1px solid;
+          transition: 300ms all;
+          &:hover {
+            color: #222835;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }

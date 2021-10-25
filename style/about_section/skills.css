@@ -1,0 +1,5 @@
+.about-page-skills .container-fluid .row img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=skills.css.map */

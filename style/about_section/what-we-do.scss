@@ -1,0 +1,32 @@
+.about-page-what-we-do {
+    .container {
+      .title {
+        font-weight: bold;
+        position: relative;
+        width: 200px;
+        &::after {
+          position: absolute;
+          content: "";
+          bottom: -14px;
+          left: 65px;
+          height: 2px;
+          width: 75px;
+          background-color: $primary-color;
+        }
+      }
+      .about-line {
+        .line-first {
+          display: inline-block;
+          height: 1px;
+          width: 48%;
+          background-color: #99999936;
+        }
+        .line-last {
+          display: inline-block;
+          height: 1px;
+          width: 48%;
+          background-color: #99999936;
+        }
+      }
+    }
+  }

@@ -1,0 +1,134 @@
+@media screen and (min-width: 992px) {
+  .dropright,
+  .dropdown {
+    &:hover {
+      & > .dropdown-menu {
+        display: block;
+      }
+    }
+    & > .dropdown-toggle {
+      &:active {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+.dropdown-menu {
+  // box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  border: 1px solid #eff1f4;
+  border-radius: 2px;
+  border-top: 1px solid $primary-color;
+}
+.dropdown-item {
+  padding: 0.25rem 1rem;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #222835;
+  &:hover {
+    color: $primary-color;
+  }
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    // overflow: hidden;
+    header {
+      // overflow: hidden;
+      .navbar {
+        .container {
+          .navbar-toggler {
+            z-index: 1080;
+            .iconify {
+              font-size: 28px;
+              color: #000;
+            }
+          }
+          .navbar-toggler[aria-expanded="false"] {
+            .navbar-toggler-icon {
+              display: block;
+            }
+            .iconify {
+              display: none;
+            }
+          }
+          .navbar-toggler[aria-expanded="true"] {
+            .navbar-toggler-icon {
+              display: none;
+            }
+            .iconify {
+              display: block;
+            }
+          }
+          .navbar-collapse {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: calc(100vh - 58px);
+            background-color: #fff;
+            transform: translateX(150%);
+            transition: 300ms transform;
+            margin-top: 58px;
+          }
+
+          .show {
+            z-index: 1070;
+            transform: translateX(0);
+            .navbar-nav {
+              height: 100%;
+              // align-items: center;
+              padding: 30px 15px;
+
+              .active {
+                background-color: #eff9fa;
+                .nav-link {
+                  font-weight: 700;
+                  color: #222835;
+                }
+              }
+              .nav-item {
+                padding: 2px 5px;
+                margin-left: 0;
+                border-radius: 0.25rem;
+                .dropdown-menu {
+                  background-color: transparent;
+                  border: none;
+                  .dropdown-item {
+                    color: #222835;
+                  }
+                  .dropright {
+                  }
+                }
+
+                &:hover {
+                  background-color: #eff9fa;
+                  .nav-link {
+                    font-weight: 700;
+                    color: #222835;
+                  }
+                }
+                &:not(:first-child) {
+                  margin-top: 5px;
+                }
+                .nav-link {
+                  &:hover {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
